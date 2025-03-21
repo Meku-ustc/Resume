@@ -1,0 +1,345 @@
+<!doctype html><html><head><style type="text/css">/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section */
+header {
+  position: relative;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Background Slider */
+.background-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Fallback background */
+  animation: slideBackground 15s infinite;
+  z-index: -1;
+}
+
+@keyframes slideBackground {
+  0%, 100% {
+    background-image: url('images/bg1.jpg');
+  }
+  33% {
+    background-image: url('images/bg2.jpg');
+  }
+  66% {
+    background-image: url('images/bg3.jpg');
+  }
+}
+
+/* Navigation Menu */
+nav {
+  background: #2a5298;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #1e3c72;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+  background: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2a5298;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #1e3c72;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #2a5298;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+/* Links */
+a {
+  color: #2a5298;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1e3c72;
+}
+/* Thesis Image */
+.thesis-img {
+  width: 700px;
+  height: 500px;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #2a5298;
+  transition: transform 0.3s ease;
+}
+
+.thesis-img:hover {
+  transform: scale(1.1);
+}
+
+/* Links */
+a {
+  color: #2a5298;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1e3c72;
+}
+
+
+/* Footer */
+footer {
+  background: #2a5298;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #f4f4f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section h3 {
+    font-size: 1.3rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}</style></head><body><!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mekuanint Awoke - Academic Profile</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Header Section -->
+	<header>
+		<div class="background-slider"></div> <!-- Background slider container -->
+		<div class="container">
+			<h1>Mekuanint Awoke</h1>
+			<p>PhD Researcher in Nuclear Fusion</p>
+			<p>CAS Institute of Plasma Physics, Hefei, China</p>
+			<p>USTC University</p>
+		</div>
+	</header>
+
+	<!-- Navigation Menu -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">Resume</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Home Page Content -->
+	<section class="container">
+		<h2>Welcome to My Academic Profile</h2>
+		<p>
+			I am a PhD student at the <strong>CAS Institute of Plasma Physics (ASIPP)</strong> in Hefei, China, working under the guidance of <strong>Prof. Yuanlai Xie</strong>. My research is part of the <strong>Neutron Beam Injection</strong> team, where I focus on the <strong>thermal structural design and optimization of calorimeters for neutron beam injection systems</strong>. This work is critical for advancing the efficiency and safety of nuclear fusion technologies, particularly in the context of plasma confinement and energy extraction.
+		</p>
+<img src="images/bg8.jpg" class="thesis-img">
+<p class="image-caption">EAST- Experimental Advanced Superconducting Tokamak</p>
+
+	</section>
+	<section class="container">
+		<h2>PhD Thesis Research Methodology</h2>
+		<p>
+			My PhD thesis employs a multidisciplinary approach, combining <strong>computational modeling, thermal-structural analysis, and optimization techniques</strong> to address the challenges associated with calorimeter design. The methodology involves:
+		</p>
+		<ul>
+			<li><strong>Thermal Analysis</strong>: Using computational tools to simulate heat transfer and thermal stresses in calorimeter materials under extreme conditions, such as high neutron flux and thermal gradients.</li>
+			<li><strong>Structural Optimization</strong>: Applying advanced optimization algorithms to enhance the mechanical integrity and thermal performance of calorimeter components, ensuring they can withstand operational stresses while maintaining accuracy.</li>
+			<li><strong>Finite Element Analysis (FEA)</strong>: Leveraging FEA software to model and predict the behavior of materials under thermal and mechanical loads, enabling the identification of critical failure points and design improvements.</li>
+			<li><strong>Experimental Validation</strong>: Collaborating with experimental teams to validate computational models using real-world data from neutron beam injection systems, ensuring the reliability and accuracy of the designs.</li>
+		</ul>
+    <style>
+        /* Embedded CSS */
+        .image-container {
+            text-align: center; /* Centers the content inside the container */
+            margin-bottom: 20px; /* Adds space between image-caption pairs */
+        }
+
+        .thesis-img {
+            display: block; /* Ensures the image is treated as a block element */
+            margin: 0 auto; /* Centers the image horizontally */
+        }
+
+        .image-caption {
+            text-align: center; /* Centers the caption text */
+            margin-top: 10px; /* Adds space between the image and the caption */
+        }
+    </style>
+<img src="images/calorimeter.jpg" class="thesis-img">
+<p class="image-caption">Figure 1. CFETR NNBI system verification prototype</p>
+<img src="images/calorimeter2.jpg" class="thesis-img">
+<p class="image-caption">Figure 2. (a) diagram of the overall structure of the calorimeter, (b) the main pipe for water supply, (c) the support frame and (d) the main target plate structure.</p>
+<p class="image-caption"> Authors: Ning Tang, Chun-Dong Hu & Yuan-Lai Xie</p>
+
+	</section>
+	<section class="container"><h2>Academic Background</h2>
+		<p> Prior to my PhD, I completed my <strong>MSc in Energy and Power Engineering</strong> at <strong>Tsinghua University</strong>, specializing in <strong>Nuclear Engineering and Management</strong>. My MSc thesis, titled <em>"CFD Modelling and Simulation of Two-Phase Flow in Thermosyphon Material in Passive Heat Decay Removal System in HTGR"</em>, provided me with a strong foundation in computational fluid dynamics (CFD) and heat transfer analysis, which I now apply to my current research.
+		</p>
+		<p>
+			My work aims to contribute to the development of robust and efficient calorimeter systems, ultimately supporting the advancement of nuclear fusion as a sustainable energy source. I am passionate about bridging the gap between theoretical modeling and practical engineering solutions in the field of nuclear energy.
+		</p>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<p>&copy; 2025 [Mekuanint Awoke]. All rights reserved.</p>
+			<p>Hosted on GitHub Pages.</p>
+		</div>
+	</footer>
+
+	<script src="scripts.js"></script> <!-- Add JavaScript file -->
+</body>
+
+</html><script type="text/javascript">const images = [
+  'images/bg1.jpg',
+  'images/bg2.jpg',
+  'images/bg3.jpg'
+];
+
+let currentIndex = 0;
+const backgroundSlider = document.querySelector('.background-slider');
+
+function changeBackground() {
+  backgroundSlider.style.backgroundImage = `url(${images[currentIndex]})`;
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+// Change background every 5 seconds
+setInterval(changeBackground, 5000);
+
+// Set initial background
+changeBackground();</script></body><html>
